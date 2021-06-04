@@ -20,6 +20,9 @@ object Dependencies {
     const val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
     const val androidLegacy = "androidx.legacy:legacy-support-v4:${Versions.android_legacy}"
     const val navigationSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
+    const val roomRuntime = "androidx.room:room-runtime:${Versions.room_version}"
+    const val room = "androidx.room:room-ktx:${Versions.room_version}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room_version}"
 }
 
 object TestDependencies {

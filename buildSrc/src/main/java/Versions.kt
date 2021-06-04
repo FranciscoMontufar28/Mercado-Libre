@@ -11,6 +11,7 @@ object Versions {
     const val android_material = "1.3.0"
     const val constraint_layout = "2.0.4"
     const val android_legacy = "1.0.0"
+    const val room_version = "2.3.0"
 }
 
 object TestVersions {
