@@ -17,6 +17,12 @@ class UserCasesModule {
             ),
             GetProductsByName(
                 productListRepository
+            ),
+            SaveLocalProducts(
+                productListRepository
+            ),
+            GetLocalProducts(
+                productListRepository
             )
         )
 

@@ -2,6 +2,7 @@ package com.francisco.meliclone.di
 
 import android.app.Application
 import com.francisco.data.di.RepositoryModule
+import com.francisco.databasemanager.di.DataBaseModule
 import com.francisco.requestmanager.di.RequestManagerModule
 import com.francisco.usercases.di.UserCasesModule
 import dagger.BindsInstance
@@ -12,7 +13,8 @@ import javax.inject.Singleton
 @Component(
     modules = [UserCasesModule::class,
         RepositoryModule::class,
-        RequestManagerModule::class]
+        RequestManagerModule::class,
+        DataBaseModule::class]
 )
 interface AppComponent {
 

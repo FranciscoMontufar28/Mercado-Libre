@@ -1,9 +1,6 @@
 package com.francisco.data.di
 
-import com.francisco.data.ProductDetailRepositoryImpl
-import com.francisco.data.ProductDetailsDataSource
-import com.francisco.data.ProductListRepositoryImpl
-import com.francisco.data.RemoteProductListDataSource
+import com.francisco.data.*
 import com.francisco.domain.ProductDetailRepository
 import com.francisco.domain.ProductListRepository
 import dagger.Module
@@ -13,8 +10,11 @@ import dagger.Provides
 class RepositoryModule {
 
     @Provides
-    fun provideProductListRepository(remoteProductListDataSource: RemoteProductListDataSource): ProductListRepository =
-        ProductListRepositoryImpl(remoteProductListDataSource)
+    fun provideProductListRepository(
+        remoteProductListDataSource: RemoteProductListDataSource,
+        localProductListDataSource: LocalProductListDataSource
+    ): ProductListRepository =
+        ProductListRepositoryImpl(remoteProductListDataSource, localProductListDataSource)
 
     @Provides
     fun provideProductDetailRepository(productDetailsDataSource: ProductDetailsDataSource): ProductDetailRepository =

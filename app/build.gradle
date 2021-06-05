@@ -44,6 +44,7 @@ dependencies {
     implementation project(":data")
     implementation project(":usercases")
     implementation project(":framework:requestmanager")
+    implementation project(":framework:databasemanager")
     implementation Dependencies.kotlinVersion
     implementation Dependencies.androidxCore
     implementation Dependencies.androidxAppCompat

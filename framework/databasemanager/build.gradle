@@ -41,7 +41,7 @@ dependencies {
     kapt Dependencies.daggerCompiler
     implementation Dependencies.coroutinesCore
     implementation Dependencies.coroutinesAndroid
-    /*api Dependencies.roomRuntime
+    api Dependencies.roomRuntime
     implementation Dependencies.room
-    kapt Dependencies.roomCompiler*/
+    kapt Dependencies.roomCompiler
 }
