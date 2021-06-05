@@ -1,3 +1,4 @@
+include ':framework:imagemanager'
 include ':framework:databasemanager'
 include ':domain'
 include ':usercases'

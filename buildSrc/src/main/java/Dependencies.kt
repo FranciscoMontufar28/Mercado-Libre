@@ -23,7 +23,9 @@ object Dependencies {
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room_version}"
     const val room = "androidx.room:room-ktx:${Versions.room_version}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room_version}"
-    const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rxAndroid}"
+    const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rx_android}"
+    const val glide = "com.github.bumptech.glide:glide:${Versions.glide_version}"
+    const val glideCompile = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
 }
 
 object TestDependencies {

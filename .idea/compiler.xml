@@ -6,7 +6,9 @@
       <module name="MeliClone.buildSrc" target="1.8" />
       <module name="MeliClone.data" target="1.8" />
       <module name="MeliClone.framework.databasemanager" target="1.8" />
+      <module name="MeliClone.framework.imagemanager" target="1.8" />
       <module name="MeliClone.framework.requestmanager" target="1.8" />
+      <module name="MeliClone.imagemanager" target="1.8" />
       <module name="MeliClone.usercases" target="1.8" />
     </bytecodeTargetLevel>
   </component>

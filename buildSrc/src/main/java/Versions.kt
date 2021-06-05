@@ -12,7 +12,8 @@ object Versions {
     const val constraint_layout = "2.0.4"
     const val android_legacy = "1.0.0"
     const val room_version = "2.3.0"
-    const val rxAndroid = "3.0.0"
+    const val rx_android = "3.0.0"
+    const val glide_version = "4.12.0"
 }
 
 object TestVersions {
