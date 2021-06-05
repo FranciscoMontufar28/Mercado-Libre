@@ -135,6 +135,6 @@ class ProductListFragment : Fragment() {
     }
 
     private fun onApplicationConnected() {
-        
+
     }
 }
