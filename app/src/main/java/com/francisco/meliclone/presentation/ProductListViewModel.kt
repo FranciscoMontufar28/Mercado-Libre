@@ -8,7 +8,7 @@ import com.francisco.domain.ProductDomain
 import com.francisco.usercases.ProductListUserCases
 import kotlinx.coroutines.launch
 import timber.log.Timber
-import java.lang.Exception
+import java.io.IOException
 import javax.inject.Inject
 
 class ProductListViewModel @Inject constructor(val productListUserCases: ProductListUserCases) :
@@ -40,6 +40,9 @@ class ProductListViewModel @Inject constructor(val productListUserCases: Product
                 } else {
                     _state.value = ProductListState.NotAvailableProduct
                 }
+            } catch (exception: IOException) {
+                Timber.e(exception)
+                _state.value = ProductListState.NoInternetConnection
             } catch (exception: Exception) {
                 Timber.e(exception)
                 _state.value = ProductListState.UnKnownError
@@ -55,9 +58,13 @@ class ProductListViewModel @Inject constructor(val productListUserCases: Product
                 val result = productListUserCases.getProductsByName.invoke(query)
                 if (result.isNotEmpty()) {
                     _state.value = ProductListState.ShowProducts(result)
+                    productListUserCases.saveLocalProducts.invoke(result)
                 } else {
                     _state.value = ProductListState.NotAvailableProduct
                 }
+            } catch (exception: IOException) {
+                Timber.e(exception)
+                _state.value = ProductListState.NoInternetConnection
             } catch (exception: Exception) {
                 Timber.e(exception)
                 _state.value = ProductListState.UnKnownError

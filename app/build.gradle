@@ -51,16 +51,18 @@ dependencies {
     implementation Dependencies.androidMaterial
     implementation Dependencies.constraintlayout
     implementation Dependencies.androidLegacy
-
-    testImplementation TestDependencies.jUnit
-    androidTestImplementation TestDependencies.junitExt
-    androidTestImplementation TestDependencies.espresso
-
     implementation Dependencies.dagger
-    kapt Dependencies.daggerCompiler
     implementation Dependencies.coroutinesCore
     implementation Dependencies.coroutinesAndroid
     implementation Dependencies.timber
     implementation Dependencies.navigation
     implementation Dependencies.navigationKotlin
+    implementation Dependencies.rxAndroid
+    kapt Dependencies.daggerCompiler
+
+    testImplementation TestDependencies.jUnit
+    androidTestImplementation TestDependencies.junitExt
+    androidTestImplementation TestDependencies.espresso
+
+
 }
