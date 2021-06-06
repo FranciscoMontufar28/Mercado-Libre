@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/product_detail_title" />
 
             <TextView
-                android:id="@+id/tv_product_detail_price"
+                android:id="@+id/product_detail_price"
                 android:layout_width="@dimen/zero_margin"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/min_margin"
@@ -80,7 +80,7 @@
                 android:textColor="@color/freeShippingColor"
                 android:visibility="@{product.freeShipping ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_price"
+                app:layout_constraintTop_toBottomOf="@+id/product_detail_price"
                 tools:visibility="visible" />
 
             <TextView
@@ -223,7 +223,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/separator3" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_attributes"
+                android:id="@+id/product_details_atributes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/min_margin"
