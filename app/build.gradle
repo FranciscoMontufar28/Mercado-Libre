@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
     id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
 }
 
 android {
@@ -62,6 +64,9 @@ dependencies {
     implementation Dependencies.rxAndroid
     implementation Dependencies.carouselview
     kapt Dependencies.daggerCompiler
+    implementation platform(Dependencies.firebasePlatform)
+    implementation Dependencies.firebaseCrashlyticsKtx
+    implementation Dependencies.firebaseAnalyticsKtx
 
     testImplementation TestDependencies.jUnit
     androidTestImplementation TestDependencies.junitExt

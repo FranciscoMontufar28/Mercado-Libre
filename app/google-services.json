@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "129542994708",
+    "project_id": "meliclone-17f80",
+    "storage_bucket": "meliclone-17f80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129542994708:android:ef96c55a97067e3b32a001",
+        "android_client_info": {
+          "package_name": "com.francisco.meliclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129542994708-khb5f2s89qkj2lnmqct80k0ott40g498.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.francisco.meliclone",
+            "certificate_hash": "012452d9303189178f2eac51cba9eb3b8f91d0eb"
+          }
+        },
+        {
+          "client_id": "129542994708-1d95f8aik836qdg6jbi2dt3egobc7lv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9N_cSkgc9Tz49PKVKd1T06gnT_kam2XI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129542994708-1d95f8aik836qdg6jbi2dt3egobc7lv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

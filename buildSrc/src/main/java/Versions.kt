@@ -15,6 +15,9 @@ object Versions {
     const val rx_android = "3.0.0"
     const val glide_version = "4.12.0"
     const val carousel_view_version = "0.1.5"
+    const val google_services = "4.3.5"
+    const val firebase_platform = "27.1.0"
+    const val firebase_crashlytics_gradle = "2.5.2"
 }
 
 object TestVersions {

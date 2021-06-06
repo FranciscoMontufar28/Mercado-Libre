@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.francisco.domain.ProductDomain
 import com.francisco.usercases.ProductListUserCases
+import com.google.firebase.crashlytics.FirebaseCrashlytics
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.io.IOException
@@ -41,9 +42,11 @@ class ProductListViewModel @Inject constructor(val productListUserCases: Product
                     _state.value = ProductListState.NotAvailableProduct
                 }
             } catch (exception: IOException) {
+                exception.message?.let { com.francisco.meliclone.util.crashlyticsLog(it) }
                 Timber.e(exception)
                 _state.value = ProductListState.NoInternetConnection
             } catch (exception: Exception) {
+                exception.message?.let { com.francisco.meliclone.util.crashlyticsLog(it) }
                 Timber.e(exception)
                 _state.value = ProductListState.UnKnownError
             }
@@ -63,9 +66,11 @@ class ProductListViewModel @Inject constructor(val productListUserCases: Product
                     _state.value = ProductListState.NotAvailableProduct
                 }
             } catch (exception: IOException) {
+                exception.message?.let { com.francisco.meliclone.util.crashlyticsLog(it) }
                 Timber.e(exception)
                 _state.value = ProductListState.NoInternetConnection
             } catch (exception: Exception) {
+                exception.message?.let { com.francisco.meliclone.util.crashlyticsLog(it) }
                 Timber.e(exception)
                 _state.value = ProductListState.UnKnownError
             }
@@ -84,6 +89,7 @@ class ProductListViewModel @Inject constructor(val productListUserCases: Product
                     _state.value = ProductListState.NoInternetConnection
                 }
             } catch (exception: Exception) {
+                exception.message?.let { com.francisco.meliclone.util.crashlyticsLog(it) }
                 Timber.e(exception)
                 _state.value = ProductListState.DataBaseError
             }

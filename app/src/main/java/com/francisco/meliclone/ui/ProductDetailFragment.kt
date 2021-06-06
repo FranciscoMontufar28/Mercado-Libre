@@ -59,7 +59,7 @@ class ProductDetailFragment : Fragment() {
             productDetailViewModel.getProductDetailsByItemId(args.id)
             productDetailViewModel.state.observe(viewLifecycleOwner, Observer(::onStateListener))
             setUpAttributesRecycler()
-        }else{
+        } else {
             Timber.e("no arguments available")
         }
     }
@@ -77,6 +77,11 @@ class ProductDetailFragment : Fragment() {
                 updateProductDetail(this.products)
             }
             is ProductDetailViewModel.ProductDetailState.UnKnownError -> onUnKnownError()
+            is ProductDetailViewModel.ProductDetailState.UpdatedProductDetails -> state.run {
+                onProductDetailUpdated(
+                    this.productDetailsBind
+                )
+            }
         }
     }
 
@@ -85,11 +90,11 @@ class ProductDetailFragment : Fragment() {
     }
 
     private fun updateProductDetail(products: DetailProductDomain) {
-        productDetailsBind?.imgList = products.imgList
-        productDetailsBind?.warranty = products.warranty
-        productDetailsBind?.stateSold = "${productDetailsBind?.stateSold} | ${products.availableQuantity}"
-        productDetailsBind?.stock = products.availableQuantity.isNotEmpty()
-        productAttributesAdapter.setDataAttributes(products.attributes)
+        productDetailsBind?.let { productDetailViewModel.updateProductDetail(products, it) }
+    }
+
+    private fun onProductDetailUpdated(productDetailsBind: ProductDetailsBind) {
+        productAttributesAdapter.setDataAttributes(productDetailsBind.attributes)
         binding.product = productDetailsBind
     }
 

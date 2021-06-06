@@ -17,9 +17,11 @@ object Dependencies {
     const val androidxCore = "androidx.core:core-ktx:${Versions.androidx_core}"
     const val androidxAppCompat = "androidx.appcompat:appcompat:${Versions.androidx_app_compat}"
     const val androidMaterial = "com.google.android.material:material:${Versions.android_material}"
-    const val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    const val constraintlayout =
+        "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
     const val androidLegacy = "androidx.legacy:legacy-support-v4:${Versions.android_legacy}"
-    const val navigationSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
+    const val navigationSafeArgs =
+        "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.nav_version}"
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room_version}"
     const val room = "androidx.room:room-ktx:${Versions.room_version}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room_version}"
@@ -27,6 +29,12 @@ object Dependencies {
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide_version}"
     const val glideCompile = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
     const val carouselview = "com.synnapps:carouselview:${Versions.carousel_view_version}"
+    const val googleServices = "com.google.gms:google-services:${Versions.google_services}"
+    const val firebasePlatform = "com.google.firebase:firebase-bom:${Versions.firebase_platform}"
+    const val firebaseCrashlyticsKtx = "com.google.firebase:firebase-crashlytics-ktx"
+    const val firebaseAnalyticsKtx = "com.google.firebase:firebase-analytics-ktx"
+    const val firebaseCrashlyticsGradle =
+        "com.google.firebase:firebase-crashlytics-gradle:${Versions.firebase_crashlytics_gradle}"
 }
 
 object TestDependencies {
