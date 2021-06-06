@@ -6,6 +6,7 @@ import android.widget.SearchView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.francisco.domain.ProductDomain
 import com.francisco.meliclone.MercadoApp
@@ -14,6 +15,7 @@ import com.francisco.meliclone.adapters.ProductListAdapter
 import com.francisco.meliclone.databinding.FragmentProductListBinding
 import com.francisco.meliclone.di.ProductListComponent
 import com.francisco.meliclone.di.ProductListModule
+import com.francisco.meliclone.parcelable.toProductParcelable
 import com.francisco.meliclone.presentation.ProductListViewModel
 import com.francisco.meliclone.util.GridItemDecoration
 import com.francisco.meliclone.util.LifeCycleDisposable
@@ -33,7 +35,7 @@ class ProductListFragment : Fragment() {
     private lateinit var productListComponent: ProductListComponent
     private var _binding: FragmentProductListBinding? = null
     private val binding get() = _binding!!
-    private val productListAdapter by lazy { ProductListAdapter() }
+    private val productListAdapter by lazy { ProductListAdapter(::navigateToProductDetails) }
     private val productListViewModel: ProductListViewModel by lazy {
         getViewModel { productListComponent.productListViewModel }
     }
@@ -197,5 +199,11 @@ class ProductListFragment : Fragment() {
         } else {
             productListViewModel.getProductListByName(searchQuery!!)
         }
+    }
+
+    private fun navigateToProductDetails(product: ProductDomain) {
+        val action =
+            ProductListFragmentDirections.actionProductListFragmentToProductDetailFragment(product.toProductParcelable())
+        findNavController().navigate(action)
     }
 }

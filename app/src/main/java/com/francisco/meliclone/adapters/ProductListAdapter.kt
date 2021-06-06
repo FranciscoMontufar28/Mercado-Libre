@@ -10,14 +10,15 @@ import com.francisco.domain.ProductDomain
 import com.francisco.meliclone.R
 import com.francisco.meliclone.databinding.ItemProductListDesignBinding
 
-class ProductListAdapter : ListAdapter<ProductDomain, ProductListAdapter.ProductViewHolder>(object :
-    DiffUtil.ItemCallback<ProductDomain>() {
-    override fun areContentsTheSame(oldItem: ProductDomain, newItem: ProductDomain): Boolean =
-        oldItem.id == newItem.id
+class ProductListAdapter(val onProductClicked: (ProductDomain) -> Unit) :
+    ListAdapter<ProductDomain, ProductListAdapter.ProductViewHolder>(object :
+        DiffUtil.ItemCallback<ProductDomain>() {
+        override fun areContentsTheSame(oldItem: ProductDomain, newItem: ProductDomain): Boolean =
+            oldItem.id == newItem.id
 
-    override fun areItemsTheSame(oldItem: ProductDomain, newItem: ProductDomain): Boolean =
-        oldItem == newItem
-}) {
+        override fun areItemsTheSame(oldItem: ProductDomain, newItem: ProductDomain): Boolean =
+            oldItem == newItem
+    }) {
 
     private var data: List<ProductDomain> = listOf()
 
@@ -29,7 +30,7 @@ class ProductListAdapter : ListAdapter<ProductDomain, ProductListAdapter.Product
             parent,
             false
         )
-        return ProductViewHolder(view)
+        return ProductViewHolder(view, onProductClicked)
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
@@ -45,8 +46,16 @@ class ProductListAdapter : ListAdapter<ProductDomain, ProductListAdapter.Product
         notifyDataSetChanged()
     }
 
-    inner class ProductViewHolder(val view: ItemProductListDesignBinding) :
-        RecyclerView.ViewHolder(view.root) {
+    inner class ProductViewHolder(
+        val view: ItemProductListDesignBinding,
+        val onProductClicked: (ProductDomain) -> Unit
+    ) : RecyclerView.ViewHolder(view.root) {
+        init {
+            view.root.setOnClickListener {
+                onProductClicked(data[adapterPosition])
+            }
+        }
+
         fun bind(item: ProductDomain) {
             view.product = item
         }

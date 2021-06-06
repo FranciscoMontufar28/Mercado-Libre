@@ -9,7 +9,7 @@ fun ProductsResult.toProductDomain() = ProductDomain(
     price = "$${this.price}",
     img = this.thumbnail,
     freeShipping = this.shipping.freeShipping,
-    location = "${this.address.cityName}, ${this.address.stateName}",
+    location = "${this.address.cityName} | ${this.address.stateName}",
     condition = if (this.condition == "new") "Nuevo" else "Usado",
     mercadoPago = this.acceptsMercadopago
 )

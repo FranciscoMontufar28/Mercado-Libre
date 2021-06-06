@@ -4,12 +4,12 @@ import com.francisco.domain.ProductDomain
 
 fun ProductListEntity.toProductListDomain() = ProductDomain(
     id = id,
-    title = title,
-    img = img,
-    price = price,
+    title = title?:"",
+    img = img?:"",
+    price = price?:"",
     freeShipping = freeShipping,
-    location = location,
-    condition = condition,
+    location = location?:"",
+    condition = condition?:"",
     mercadoPago = mercadoPago
 )
 

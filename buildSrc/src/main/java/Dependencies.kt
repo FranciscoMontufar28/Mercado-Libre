@@ -26,6 +26,7 @@ object Dependencies {
     const val rxAndroid = "io.reactivex.rxjava3:rxandroid:${Versions.rx_android}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide_version}"
     const val glideCompile = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
+    const val carouselview = "com.synnapps:carouselview:${Versions.carousel_view_version}"
 }
 
 object TestDependencies {

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
     id 'androidx.navigation.safeargs'
 }
 
@@ -59,6 +60,7 @@ dependencies {
     implementation Dependencies.navigation
     implementation Dependencies.navigationKotlin
     implementation Dependencies.rxAndroid
+    implementation Dependencies.carouselview
     kapt Dependencies.daggerCompiler
 
     testImplementation TestDependencies.jUnit
