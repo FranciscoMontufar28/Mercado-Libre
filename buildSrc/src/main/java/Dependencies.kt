@@ -37,8 +37,19 @@ object Dependencies {
         "com.google.firebase:firebase-crashlytics-gradle:${Versions.firebase_crashlytics_gradle}"
 }
 
-object TestDependencies {
+object TestImplementationDependencies {
     const val jUnit = "junit:junit:${TestVersions.jUnit}"
+    const val mockito = "org.mockito:mockito-core:${TestVersions.mockito}"
+    const val nhaarmanMockitokot =
+        "com.nhaarman.mockitokotlin2:mockito-kotlin:${TestVersions.nhaarman_mockito}"
+    const val androidxArchTesting =
+        "androidx.arch.core:core-testing:${TestVersions.androidx_arch_testing}"
+    const val coroutinesTesting =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${TestVersions.coroutines_testing}"
+    const val mockitoInline = "org.mockito:mockito-inline:${TestVersions.mockito_inline}"
+}
+
+object AndroidTestImplementationDependencies {
     const val junitExt = "androidx.test.ext:junit:${TestVersions.junit_ext}"
     const val espresso = "androidx.test.espresso:espresso-core:${TestVersions.espresso}"
 }

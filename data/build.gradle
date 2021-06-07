@@ -37,7 +37,14 @@ dependencies {
     implementation project(":domain")
     implementation Dependencies.kotlinVersion
     implementation Dependencies.dagger
-    kapt Dependencies.daggerCompiler
     implementation Dependencies.coroutinesCore
     implementation Dependencies.coroutinesAndroid
+    kapt Dependencies.daggerCompiler
+
+    testImplementation TestImplementationDependencies.jUnit
+    testImplementation TestImplementationDependencies.mockito
+    testImplementation TestImplementationDependencies.nhaarmanMockitokot
+    testImplementation TestImplementationDependencies.androidxArchTesting
+    testImplementation TestImplementationDependencies.coroutinesTesting
+    testImplementation TestImplementationDependencies.mockitoInline
 }

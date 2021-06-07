@@ -68,9 +68,6 @@ dependencies {
     implementation Dependencies.firebaseCrashlyticsKtx
     implementation Dependencies.firebaseAnalyticsKtx
 
-    testImplementation TestDependencies.jUnit
-    androidTestImplementation TestDependencies.junitExt
-    androidTestImplementation TestDependencies.espresso
-
-
+    androidTestImplementation AndroidTestImplementationDependencies.espresso
+    androidTestImplementation AndroidTestImplementationDependencies.junitExt
 }

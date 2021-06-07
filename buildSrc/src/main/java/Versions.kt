@@ -24,4 +24,9 @@ object TestVersions {
     const val jUnit = "4.+"
     const val junit_ext = "1.1.2"
     const val espresso = "3.3.0"
+    const val mockito = "3.11.0"
+    const val nhaarman_mockito = "2.2.0"
+    const val androidx_arch_testing = "2.1.0"
+    const val coroutines_testing = "1.5.0"
+    const val mockito_inline = "2.13.0"
 }
