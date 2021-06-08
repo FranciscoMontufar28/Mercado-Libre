@@ -3,9 +3,9 @@ package com.francisco.requestmanager.di
 import com.francisco.data.ProductDetailsDataSource
 import com.francisco.data.RemoteProductListDataSource
 import com.francisco.requestmanager.APIConstants.BASE_URL
-import com.francisco.requestmanager.ProductDetailsDataSourceImpl
+import com.francisco.requestmanager.impl.ProductDetailsDataSourceImpl
 import com.francisco.requestmanager.ProductRetrofitRequest
-import com.francisco.requestmanager.RemoteProductListDataSourceImpl
+import com.francisco.requestmanager.impl.RemoteProductListDataSourceImpl
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named

@@ -2,7 +2,7 @@ package com.francisco.databasemanager.di
 
 import android.app.Application
 import com.francisco.data.LocalProductListDataSource
-import com.francisco.databasemanager.LocalProductListDataSourceImpl
+import com.francisco.databasemanager.impl.LocalProductListDataSourceImpl
 import com.francisco.databasemanager.ProductDataBase
 import dagger.Module
 import dagger.Provides

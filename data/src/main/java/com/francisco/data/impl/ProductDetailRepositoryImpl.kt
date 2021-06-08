@@ -1,5 +1,6 @@
-package com.francisco.data
+package com.francisco.data.impl
 
+import com.francisco.data.ProductDetailsDataSource
 import com.francisco.domain.DetailProductDomain
 import com.francisco.domain.ProductDetailRepository
 import javax.inject.Inject

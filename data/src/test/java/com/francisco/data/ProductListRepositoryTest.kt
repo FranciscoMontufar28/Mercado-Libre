@@ -1,6 +1,7 @@
 package com.francisco.data
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.francisco.data.impl.ProductListRepositoryImpl
 import com.francisco.domain.ProductDomain
 import com.francisco.domain.ProductListRepository
 import com.nhaarman.mockitokotlin2.mock
