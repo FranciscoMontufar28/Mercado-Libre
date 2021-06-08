@@ -43,12 +43,12 @@ android {
 }
 
 dependencies {
-    implementation project(":domain")
-    implementation project(":data")
-    implementation project(":usercases")
-    implementation project(":framework:requestmanager")
-    implementation project(":framework:databasemanager")
-    implementation project(":framework:imagemanager")
+    implementation project(Modules.domain)
+    implementation project(Modules.data)
+    implementation project(Modules.userCases)
+    implementation project(Modules.requestManager)
+    implementation project(Modules.databaseManager)
+    implementation project(Modules.imageManager)
     implementation Dependencies.kotlinVersion
     implementation Dependencies.androidxCore
     implementation Dependencies.androidxAppCompat
@@ -70,4 +70,6 @@ dependencies {
 
     androidTestImplementation AndroidTestImplementationDependencies.espresso
     androidTestImplementation AndroidTestImplementationDependencies.junitExt
+    androidTestImplementation AndroidTestImplementationDependencies.espressoContrib
+    androidTestImplementation AndroidTestImplementationDependencies.testRules
 }

@@ -52,4 +52,16 @@ object TestImplementationDependencies {
 object AndroidTestImplementationDependencies {
     const val junitExt = "androidx.test.ext:junit:${TestVersions.junit_ext}"
     const val espresso = "androidx.test.espresso:espresso-core:${TestVersions.espresso}"
+    const val espressoContrib =
+        "androidx.test.espresso:espresso-contrib:${TestVersions.espresso_contrib}"
+    const val testRules = "androidx.test:rules:${TestVersions.android_implementation_test_rules}"
+}
+
+object Modules {
+    const val data = ":data"
+    const val domain = ":domain"
+    const val userCases = ":usercases"
+    const val requestManager = ":framework:requestmanager"
+    const val databaseManager = ":framework:databasemanager"
+    const val imageManager = ":framework:imagemanager"
 }

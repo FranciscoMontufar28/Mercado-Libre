@@ -71,6 +71,9 @@ implementation 'com.github.bumptech.glide:glide:4.12.0'
 implementation 'com.synnapps:carouselview:0.1.5'
 ```
 
+## UI Test
+Using the robot pattern implemented Espresso framework
+
 ## Unit Test 
 Se implementaron las librerías de mockito y mockitokotlin2 , para facilitar el uso en lenguaje Kotlin.
 

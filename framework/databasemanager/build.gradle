@@ -34,8 +34,8 @@ android {
 }
 
 dependencies {
-    implementation project(":domain")
-    implementation project(":data")
+    implementation project(Modules.domain)
+    implementation project(Modules.data)
     implementation Dependencies.kotlinVersion
     implementation Dependencies.dagger
     kapt Dependencies.daggerCompiler

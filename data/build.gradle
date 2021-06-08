@@ -34,7 +34,7 @@ android {
 }
 
 dependencies {
-    implementation project(":domain")
+    implementation project(Modules.domain)
     implementation Dependencies.kotlinVersion
     implementation Dependencies.dagger
     implementation Dependencies.coroutinesCore
