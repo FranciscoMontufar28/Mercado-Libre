@@ -1,5 +1,5 @@
 object Versions {
-    const val build_gradle = "4.1.3"
+    const val build_gradle = "4.2.1"
     const val kotlin_version = "1.3.72"
     const val dagger_version = "2.36"
     const val coroutines_version = "1.3.0"

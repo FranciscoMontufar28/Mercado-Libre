@@ -1,4 +1,4 @@
-package com.francisco.usercases
+package com.francisco.domain.usercases
 
 import com.francisco.domain.ProductDomain
 import com.francisco.domain.ProductListRepository

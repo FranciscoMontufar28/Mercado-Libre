@@ -60,7 +60,6 @@ object AndroidTestImplementationDependencies {
 object Modules {
     const val data = ":data"
     const val domain = ":domain"
-    const val userCases = ":usercases"
     const val requestManager = ":framework:requestmanager"
     const val databaseManager = ":framework:databasemanager"
     const val imageManager = ":framework:imagemanager"

@@ -2,7 +2,7 @@ package com.francisco.meliclone.parcelable
 
 import android.os.Parcelable
 import com.francisco.domain.ProductDomain
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class ProductListParcelable(

@@ -5,8 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.francisco.domain.ProductDomain
-import com.francisco.usercases.ProductListUserCases
-import com.google.firebase.crashlytics.FirebaseCrashlytics
+import com.francisco.domain.usercases.ProductListUserCases
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.io.IOException

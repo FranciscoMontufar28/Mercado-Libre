@@ -1,7 +1,8 @@
-package com.francisco.usercases
+package com.francisco.domain
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.francisco.domain.ProductDetailRepository
+import com.francisco.domain.usercases.GetProductDetailsByItemId
+import com.francisco.domain.usercases.ProductDetailsUserCases
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers

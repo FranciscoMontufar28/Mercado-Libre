@@ -1,7 +1,7 @@
 package com.francisco.meliclone.di
 
+import com.francisco.domain.usercases.ProductDetailsUserCases
 import com.francisco.meliclone.presentation.ProductDetailViewModel
-import com.francisco.usercases.ProductDetailsUserCases
 import dagger.Module
 import dagger.Provides
 import dagger.Subcomponent

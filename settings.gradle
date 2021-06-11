@@ -1,7 +1,6 @@
 include ':framework:imagemanager'
 include ':framework:databasemanager'
 include ':domain'
-include ':usercases'
 include ':data'
 include ':framework:requestmanager'
 include ':app'

@@ -3,15 +3,15 @@ package com.francisco.meliclone.di
 import android.app.Application
 import com.francisco.data.di.RepositoryModule
 import com.francisco.databasemanager.di.DataBaseModule
+import com.francisco.domain.di.DomainModule
 import com.francisco.requestmanager.di.RequestManagerModule
-import com.francisco.usercases.di.UserCasesModule
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
 @Component(
-    modules = [UserCasesModule::class,
+    modules = [DomainModule::class,
         RepositoryModule::class,
         RequestManagerModule::class,
         DataBaseModule::class]

@@ -1,4 +1,4 @@
-package com.francisco.usercases
+package com.francisco.domain.usercases
 
 data class ProductDetailsUserCases(
     val getProductDetailsByItemId: GetProductDetailsByItemId

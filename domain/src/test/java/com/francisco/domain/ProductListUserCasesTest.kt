@@ -1,8 +1,8 @@
-package com.francisco.usercases
+package com.francisco.domain
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
+import com.francisco.domain.usercases.*
 
-import com.francisco.domain.ProductListRepository
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
 import kotlinx.coroutines.Dispatchers

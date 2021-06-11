@@ -1,4 +1,4 @@
-package com.francisco.usercases
+package com.francisco.domain
 
 import com.francisco.domain.DetailProductDomain
 import com.francisco.domain.ProductDomain

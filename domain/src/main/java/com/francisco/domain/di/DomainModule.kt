@@ -1,13 +1,13 @@
-package com.francisco.usercases.di
+package com.francisco.domain.di
 
 import com.francisco.domain.ProductDetailRepository
 import com.francisco.domain.ProductListRepository
-import com.francisco.usercases.*
+import com.francisco.domain.usercases.*
 import dagger.Module
 import dagger.Provides
 
 @Module
-class UserCasesModule {
+class DomainModule {
 
     @Provides
     fun provideProductListUserCases(productListRepository: ProductListRepository) =
