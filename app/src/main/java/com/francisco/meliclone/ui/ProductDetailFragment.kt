@@ -9,16 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.francisco.domain.DetailProductDomain
-import com.francisco.domain.ProductDetailsBind
-import com.francisco.domain.toProductDetailsBind
 import com.francisco.meliclone.MercadoApp
 import com.francisco.meliclone.adapters.ProductAttributesAdapter
-import com.francisco.meliclone.adapters.ProductListAdapter
 import com.francisco.meliclone.databinding.FragmentProductDetailBinding
 import com.francisco.meliclone.di.ProductDetailComponent
 import com.francisco.meliclone.di.ProductDetailModule
 import com.francisco.meliclone.parcelable.toProductDomain
 import com.francisco.meliclone.presentation.ProductDetailViewModel
+import com.francisco.meliclone.presentation.ProductDetailsBind
+import com.francisco.meliclone.presentation.toProductDetailsBind
 import com.francisco.meliclone.util.getViewModel
 import timber.log.Timber
 

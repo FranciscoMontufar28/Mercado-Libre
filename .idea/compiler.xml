@@ -2,14 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="MeliClone.app" target="1.8" />
-      <module name="MeliClone.buildSrc" target="1.8" />
-      <module name="MeliClone.data" target="1.8" />
-      <module name="MeliClone.framework.databasemanager" target="1.8" />
-      <module name="MeliClone.framework.imagemanager" target="1.8" />
-      <module name="MeliClone.framework.requestmanager" target="1.8" />
+      <module name="MeliClone.app" target="11" />
+      <module name="MeliClone.buildSrc" target="11" />
+      <module name="MeliClone.data" target="11" />
+      <module name="MeliClone.framework.databasemanager" target="11" />
+      <module name="MeliClone.framework.imagemanager" target="11" />
+      <module name="MeliClone.framework.requestmanager" target="11" />
       <module name="MeliClone.imagemanager" target="1.8" />
-      <module name="MeliClone.usercases" target="1.8" />
+      <module name="MeliClone.usercases" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

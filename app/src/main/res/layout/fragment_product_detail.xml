@@ -9,7 +9,7 @@
 
         <variable
             name="product"
-            type="com.francisco.domain.ProductDetailsBind" />
+            type="com.francisco.meliclone.presentation.ProductDetailsBind" />
     </data>
 
     <androidx.core.widget.NestedScrollView

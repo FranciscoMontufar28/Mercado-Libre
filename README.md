@@ -13,18 +13,13 @@ Este es una app de búsqueda basada en el api de mercado libre, por medio de la 
 
 ## Clean Code
 
-![Android-Clean-Architecture](https://user-images.githubusercontent.com/15860430/116630703-562d0680-a919-11eb-80d6-08d140c3b09a.png)
-
-La aplicacion implementa modulos, para separar sus componentes por medio de capas, esta implementacion permite que se hagan cambios a nivel de modulos sin afectar toda la aplicacion.
+![Android-Clean-Architecture](https://github.com/FranciscoMontufar28/Mercado-Libre/blob/master/gifs/architecture.png)
 
 ## MVVM
 
-Es un patrón de arquitectura sugerido por Google para aprovechar al maximo todos los componentes de JetPack de Android, buscando desacoplar al máximo la lógica con la vista.
+Es un patrón de arquitectura usado para el desarrollo de la aplicacion.
 
 ### ViewModel
-Cuando una aplicación interactúa con el usuario y por ejemplo, el dispositivo es girado, la actividad se destruye y se vuelve a crear, lo que implica que si una vista muestra cierta información al usuario, esta se deba guardar y posteriormente cuando la actividad o el fragment se vuelva a cargar, mostrar los datos de nuevo.
-En el año 2017 se presentó ViewModel, un componente que sobrevivía a los ciclos de vida de la aplicación y permitía tener un mejor control de esta situación.
-Por otra parte permite implementar "single responsibility principle", ya que toda la interacción con la vista la haría la activity o los fragments y la lógica la realizaría el ViewModel.
 
 [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
@@ -33,6 +28,10 @@ Implementa el patrón observador, pero con la ventaja de que es consiente del ci
 
 
 [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
+
+### Crashlytics
+
+[Crashlytics](https://firebase.google.com/docs/crashlytics?hl=es)
 
 
 ### Single Activity - Navigation
@@ -43,7 +42,7 @@ Antes los fragmentos se los consideraba una forma muy compleja de implementar vi
 
 ## Inyección de dependencias
 
-Para la creación del árbol de dependencias y para cumplir con uno de los principios de SOLID, se implementó Dagger2 el cual provee las dependencias necesarias durante el tiempo de ejecución, mediante el uso de anotaciones.
+En futura actualización se podria usar Hilt en su version estable
 
 [Dagger](https://dagger.dev/)
 
@@ -59,15 +58,14 @@ Rx fue implementado para responder a los cambios (buscador reactivo dentro de la
 [Mercado Libre Api](https://developers.mercadolibre.com.co/es_ar/api-docs-es)
 
 ## Room
-Almancena los datos de la lista de productos, en caso de perder la conexion carga los ultimos datos disponibles
 
 [Room](https://developer.android.com/topic/libraries/architecture/room)
 
 ## Imagenes
-Para visualizar las imágenes de los productos se implementó las librerías de Glide y carouselview.
+
+[Glide](https://github.com/bumptech/glide)
 
 ```bash
-implementation 'com.github.bumptech.glide:glide:4.12.0'
 implementation 'com.synnapps:carouselview:0.1.5'
 ```
 

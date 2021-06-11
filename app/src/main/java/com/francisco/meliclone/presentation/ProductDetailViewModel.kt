@@ -5,11 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.francisco.domain.DetailProductDomain
-import com.francisco.domain.ProductDetailsBind
 import com.francisco.meliclone.util.crashlyticsLog
 import com.francisco.usercases.ProductDetailsUserCases
-import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.google.firebase.crashlytics.internal.model.CrashlyticsReport
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import javax.inject.Inject

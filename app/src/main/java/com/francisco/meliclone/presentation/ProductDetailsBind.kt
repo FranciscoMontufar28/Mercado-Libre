@@ -1,4 +1,6 @@
-package com.francisco.domain
+package com.francisco.meliclone.presentation
+
+import com.francisco.domain.ProductDomain
 
 data class ProductDetailsBind(
     var stateSold: String,
